@@ -9,7 +9,7 @@
    <h1>Postage Calulator</h1>
    <form action="/" method='POST'>
       <label for="weight">Item Weight: </label>
-      <input type="text" name="weight" id="weight"><br>
+      <input type="number" name="weight" id="weight"><br>
       <label for="pkg">Packaging</label>
       <select name="pkg" id="pkg">
          <option value="Letters(Stamped)">Letters (Stamped)</option>
@@ -17,6 +17,7 @@
          <option value="Large Envelopes(Flats)">Large Envelopes(Flats)</option>
          <option value="First-Class Package Service—Retail">First-Class Package Service—Retail</option>
       </select>
+      <input type="submit" name="calculate" id="calculate">
    </form>
 </body>
 </html>
