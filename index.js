@@ -15,8 +15,9 @@ app.get('/', function (req, res){
 });
 
 app.post('/', function (req, res){
-   console.log(req.body);
    let result = calculateRate(req.body.pkg, req.body.weight);
+   console.log(req.body.weight);
+   console.log(result);
    res.render('postage', {body: req.body, result: result});
 });
 
