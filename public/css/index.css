@@ -1,0 +1,17 @@
+body {
+   background-color: lightblue;
+}
+
+h1 {
+   text-align: center;
+}
+
+form {
+   width: 350px;
+   margin: auto;
+}
+
+p {
+   text-align: center;
+}
+

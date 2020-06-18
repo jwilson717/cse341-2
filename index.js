@@ -12,11 +12,18 @@ app.use(bodyParser.urlencoded({extended: true }));
 app.get('/', function (req, res){
    res.writeHead(200, {"Content-Type": "text/html"});
    res.write('index.html');
+   res.end();
+});
+
+app.get('/css/index.css', function (req, res) {
+   res.send('css/index.css');
+   res.end();
 });
 
 app.post('/', function (req, res){
    let price = calculateRate(req.body.pkg, req.body.weight);
    res.render('postage', {body: req.body, result: price.toFixed(2)});
+   res.end();
 });
 
 app.listen(PORT)
