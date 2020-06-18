@@ -94,4 +94,6 @@ function calculateRate(type, weight) {
          rate = 5.90;
       }
    }
+
+   return rate;
 }
