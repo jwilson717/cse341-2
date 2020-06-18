@@ -16,7 +16,7 @@ app.get('/', function (req, res){
 
 app.post('/', function (req, res){
    let price = calculateRate(req.body.pkg, req.body.weight);
-   res.render('postage', {body: req.body, result: price});
+   res.render('postage', {body: req.body, result: price.toFixed(2)});
 });
 
 app.listen(PORT)
