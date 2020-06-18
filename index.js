@@ -15,10 +15,10 @@ app.get('/', function (req, res){
 });
 
 app.post('/', function (req, res){
-   let result = calculateRate(req.body.pkg, req.body.weight);
+   let price = calculateRate(req.body.pkg, req.body.weight);
    console.log(req.body.weight);
    console.log(result);
-   res.render('postage', {body: req.body, result: result});
+   res.render('postage', {body: req.body, result: price});
 });
 
 app.listen(PORT)
