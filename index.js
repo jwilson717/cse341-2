@@ -26,6 +26,7 @@ app.listen(PORT)
 
 function calculateRate(type, weight) {
    let rate;
+   weight = parseFloat(weight);
    if (type == 'Letters(Stamped)') {
       if(weight < 1) {
          rate = 0.55;
